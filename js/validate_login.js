@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     if (!is_login_valid()) {
-        window.location.href = "http://localhost:80/html/login.html"
+        window.location.href = "http://localhost:8000/html/login.html"
     }
     alert("Login validado! ta safe patrão")
 });
