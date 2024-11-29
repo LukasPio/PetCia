@@ -6,6 +6,7 @@
     <title>Creche</title>
     <link rel="stylesheet" href="../css/output.css">
     <script src="../js/validate_login.js" defer></script>
+    <script src="../js/validate_daycare_date.js" defer></script>
 </head>
 <body class="bg-[#805238] h-fit">
     <nav class="flex flex-row justify-between items-center max-sm:h-16 h-20 max-sm:px-2 px-4 bg-slate-700">
@@ -15,8 +16,8 @@
         class="max-sm:h-12 h-16 rounded-lg"
       />
       <section class="links transition-all flex max-sm:gap-5 gap-8 max-sm:text-base text-xl font-medium text-white">
-        <p class="hover:scale-110 hover:cursor-pointer transition-all">Home</p>
-        <p class="hover:scale-110 hover:cursor-pointer transition-all">Calendário</p>
+        <p class="hover:scale-110 hover:cursor-pointer transition-all"><a href="/html/index.html">Home</a></p>
+        <p class="hover:scale-110 hover:cursor-pointer transition-all"><a href="/php/appointmens.php">Compromissos</a></p>
         <p class="hover:scale-110 hover:cursor-pointer transition-all">Sobre nós</p>
       </section>
     </nav>
@@ -27,17 +28,17 @@
 
         <div class=" p-5 w-6/12" >
 
-            <form action=""method="post" class="flex flex-col mb-6 items-center">
+            <form action="../php/daycare.php" method="post" class="flex flex-col mb-6 items-center">
 
-                <input type="text" class="bg-[#ff7828] text-black placeholder-black p-4 rounded-3xl m-4 w-full" placeholder="Nome do pet">
+                <input name="pet_name" type="text" required class="bg-[#ff7828] text-black placeholder-black p-4 rounded-3xl m-4 w-full" placeholder="Nome do pet">
 
                 <p class="text-2xl text-white font-serif">Data de entrada</p>
-                <input type="date" class="bg-[#ff7828] p-4 rounded-3xl m-4 w-full" >
+                <input name="entry" type="date" id="entry_date" class="bg-[#ff7828] p-4 rounded-3xl m-4 w-full" >
 
                 <p class="text-2xl text-white font-serif">Data de saída</p>
-                <input type="date" class="bg-[#ff7828] p-4 rounded-3xl m-4 w-full" >
+                <input name="exit" type="date" id="exit_date" class="bg-[#ff7828] p-4 rounded-3xl m-4 w-full" >
 
-                <input type="submit" class="bg-[#ff7828] p-4 rounded-3xl w-6/12 mt-6">
+                <input id="submit_button" type="submit" class="bg-[#ff7828] p-4 rounded-3xl w-6/12 mt-6">
 
             </form>
             
