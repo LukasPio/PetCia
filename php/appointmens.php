@@ -55,15 +55,15 @@ try {
 </head>
 <body>
 <nav class="flex flex-row justify-between items-center max-sm:h-16 h-20 max-sm:px-2 px-4 bg-slate-700">
-        <img
-        src="../images/image.png"
+<img
+        src="../images/logoInsana.png"
         alt="petshop-logo"
         class="max-sm:h-12 h-16 rounded-lg"
       />
       <section class="links transition-all flex max-sm:gap-5 gap-8 max-sm:text-base text-xl font-medium text-white">
         <p class="hover:scale-110 hover:cursor-pointer transition-all"><a href="/html/index.html">Home</a></p>
         <p class="hover:scale-110 hover:cursor-pointer transition-all"><a href="/php/appointmens.php">Compromissos</a></p>
-        <p class="hover:scale-110 hover:cursor-pointer transition-all">Sobre nós</p>
+        <p class="hover:scale-110 hover:cursor-pointer transition-all"><a href="/html/aboutUs.html">Sobre nós</a></p>
       </section>
     </nav>
 <h2 class="text-2xl">Reservas de <?php echo htmlspecialchars($userEmail); ?>:</h2>
